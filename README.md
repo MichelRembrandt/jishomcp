@@ -49,6 +49,12 @@ Add it to `claude_desktop_config.json`:
 }
 ```
 
+To fully close claude desktop on linux use:
+
+```bash
+  pkill -f -i claude
+```
+
 ### Claude Code
 
 ```sh
