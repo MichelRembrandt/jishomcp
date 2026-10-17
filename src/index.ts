@@ -2,9 +2,7 @@ import { StdioServerTransport } from '@modelcontextprotocol/sdk/server/stdio.js'
 import { buildServer } from './server.js';
 
 async function main() {
-    const server = buildServer();
-    const transport = new StdioServerTransport();
-    await server.connect(transport);
+    await buildServer().connect(new StdioServerTransport());
     console.error('task-server running on stdio');
 }
 
